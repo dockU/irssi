@@ -8,6 +8,8 @@ RUN /usr/bin/useradd -m -d /srv/irssi irssi
 
 VOLUME ["/srv/irssi/.irssi", "/srv/irssi/irclogs"]
 
+RUN chown -R irssi:irssi /srv/irssi
+
 USER irssi
 
 CMD ["/usr/bin/screen", "-S irssi", "/usr/bin/irssi"]

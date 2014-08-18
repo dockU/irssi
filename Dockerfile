@@ -7,8 +7,6 @@ RUN /usr/bin/useradd -m -d /srv/irssi -k /etc/skel irssi
 
 VOLUME ["/srv/irssi/.irssi", "/srv/irssi/irclogs"]
 
-ADD start /usr/local/bin/start
-
 USER irssi
 
-ENTRYPOINT /usr/local/bin/start
+CMD ["/usr/bin/screen", "-S irssi", "/usr/bin/irssi"]

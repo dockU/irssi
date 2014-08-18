@@ -3,8 +3,8 @@ MAINTAINER Jon Chen <docku@burrito.sh>
 
 RUN pacman -Syu --noconfirm --needed irssi figlet screen
 
-RUN mkdir -p /home/irssi
-RUN /usr/bin/useradd -m -d /home/irssi irssi
+RUN mkdir -p /srv/irssi
+RUN /usr/bin/useradd -m -d /srv/irssi irssi
 
 VOLUME ["/srv/irssi/.irssi", "/srv/irssi/irclogs"]
 

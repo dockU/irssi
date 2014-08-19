@@ -2,12 +2,16 @@
 
 Irssi Docker image, based on [docku/sshd](https://github.com/dockU/sshd).
 
+### envvar:
+
+`$LUSER` should be the username you want to use.
+
 ### Volumes:
 
 ```
-VOLUME ["/srv/irssi/.irssi", "/srv/irssi/logs"]
+VOLUME ["/home/$LUSER/.irssi", "/home/$LUSER/irclogs"]
 ```
 
-* `/srv/irssi/.irssi` should be where your config, themes and scripts go.
-* `/srv/irssi/logs` is for your logs.
+* `/home/$LUSER/.irssi` should be where your config, themes and scripts go.
+* `/home/$LUSER/irclogs` is for your logs.
 

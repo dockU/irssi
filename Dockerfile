@@ -1,7 +1,7 @@
 FROM docku/sshd
 MAINTAINER Jon Chen <docku@burrito.sh>
 
-RUN pacman -Syu --noconfirm --needed irssi figlet screen oidentd cpanminus
+RUN pacman -Syu --noconfirm --needed irssi figlet screen oidentd cpanminus wget
 
 RUN /usr/bin/vendor_perl/cpanm LWP::UserAgent
 

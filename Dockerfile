@@ -18,4 +18,6 @@ USER jchen
 
 ENV HOME /home/jchen
 
+EXPOSE 113
+
 CMD ["/usr/bin/screen", "-S irssi", "/usr/bin/irssi"]

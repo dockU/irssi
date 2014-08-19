@@ -1,5 +1,7 @@
 # irssi
 
+[![Docker badge](http://docker0.serv.pw:8080/bsdlp/irssi)](https://registry.hub.docker.com/u/bsdlp/irssi/)
+
 Irssi Docker image, based on [docku/sshd](https://github.com/dockU/sshd).
 
 ### envvar:

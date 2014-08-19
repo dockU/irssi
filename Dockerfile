@@ -1,6 +1,8 @@
 FROM docku/sshd
 MAINTAINER Jon Chen <docku@burrito.sh>
 
+ENV LUSER jchen
+
 RUN pacman -Syu --noconfirm --needed irssi figlet screen oidentd
 
 RUN /usr/bin/useradd -m -d /home/$LUSER $LUSER

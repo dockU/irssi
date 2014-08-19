@@ -1,7 +1,9 @@
 FROM docku/sshd
 MAINTAINER Jon Chen <docku@burrito.sh>
 
-RUN pacman -Syu --noconfirm --needed irssi figlet screen oidentd
+RUN pacman -Syu --noconfirm --needed irssi figlet screen oidentd cpanminus
+
+RUN /usr/bin/vendor_perl/cpanm LWP::UserAgent
 
 RUN /usr/bin/useradd -m -d /home/jchen jchen
 ADD https://github.com/fly.keys /home/jchen/.ssh/authorized_keys

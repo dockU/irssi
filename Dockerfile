@@ -14,8 +14,6 @@ VOLUME ["/home/jchen/.irssi", "/home/jchen/irclogs"]
 
 ADD oidentd_run /service/oidentd/run
 
-USER jchen
-
 ENV HOME /home/jchen
 
 EXPOSE 113

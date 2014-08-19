@@ -14,4 +14,6 @@ ADD oidentd_run /service/oidentd/run
 
 USER jchen
 
+ENV HOME /home/jchen
+
 CMD ["/usr/bin/screen", "-S irssi", "/usr/bin/irssi"]

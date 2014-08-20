@@ -11,5 +11,3 @@ RUN /usr/bin/vendor_perl/cpanm LWP::UserAgent
 VOLUME ["/home/jchen/.irssi", "/home/jchen/irclogs"]
 
 ADD oidentd_run /service/oidentd/run
-
-USER jchen

@@ -1,13 +1,13 @@
 #!/bin/bash
 
 if [ -z "$STY" ]; then
-    screen -list 2>&1 /dev/null
+    screen -list | grep 'There is a screen on' > /dev/null
     if [ $? -ne 0 ]; then
         screen -S irssi irssi
         exit 0
     fi
 
-    screen -list | grep 'Attached' 2>&1 /dev/null
+    screen -list | grep 'Attached' > /dev/null
     if [ $? -ne 0 ]; then
         screen -dr irssi
         exit 0

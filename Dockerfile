@@ -10,5 +10,5 @@ VOLUME ["/home/jchen/.irssi", "/home/jchen/irclogs"]
 
 ADD oidentd_run /service/oidentd/run
 
-ADD attach_irssi.sh /root/attach_irssi.sh
-RUN /bin/echo "/root/attach_irssi.sh" >> /root/.bashrc
+ADD attach_irssi.sh /home/jchen/attach_irssi.sh
+RUN /bin/echo "/root/attach_irssi.sh" >> /home/jchen/.bashrc

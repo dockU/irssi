@@ -11,3 +11,6 @@ RUN /usr/bin/vendor_perl/cpanm -n LWP::UserAgent LWP::Protocol::https Crypt::SSL
 VOLUME ["/home/jchen/.irssi", "/home/jchen/irclogs"]
 
 ADD oidentd_run /service/oidentd/run
+
+ADD attach_irssi.sh /root/attach_irssi.sh
+RUN /bin/echo "/root/attach_irssi.sh" >> /root/.bashrc

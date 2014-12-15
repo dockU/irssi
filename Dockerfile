@@ -4,9 +4,7 @@ MAINTAINER Jon Chen <docku@burrito.sh>
 EXPOSE 113
 
 USER root
-RUN pacman -Syu --noconfirm --needed irssi figlet oidentd cpanminus wget make
-
-RUN /usr/bin/vendor_perl/cpanm -n LWP::UserAgent LWP::Protocol::https Crypt::SSLeay
+RUN pacman -Syu --noconfirm --needed irssi figlet oidentd wget
 
 VOLUME ["/home/jchen/.irssi", "/home/jchen/irclogs"]
 

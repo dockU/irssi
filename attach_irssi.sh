@@ -3,7 +3,7 @@
 if [ -z "$STY" ]; then
     screen -list | grep 'There is a screen on' > /dev/null
     if [ $? -ne 0 ]; then
-        screen -S irssi irssi
+        screen -U -S irssi irssi
         exit 0
     fi
 

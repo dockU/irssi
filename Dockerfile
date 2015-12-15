@@ -20,4 +20,4 @@ ENV HOME /home/jchen
 ADD oidentd_run /service/oidentd/run
 
 ADD attach_irssi.sh /home/jchen/attach_irssi.sh
-RUN /bin/echo "/home/jchen/attach_irssi.sh" >> /home/jchen/.bashrc
+RUN /bin/echo "/home/jchen/attach_irssi.sh" >> /home/jchen/.bash_profile
